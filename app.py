@@ -395,7 +395,6 @@ if "Bridges" in roles_selec:
 if "Comunidades detectadas en la red" in detec:
     st.subheader("Comunidades detectadas en la Red")
     st.write("La detección de comunidades consiste en identificar grupos de nodos en una red que están más estrechamente conectados entre sí que con el resto de la red. Estos grupos de nodos forman comunidades o subgrupos dentro de la red más amplia. El objetivo principal de este análisis es revelar la estructura interna y la organización de la red, destacando las relaciones más fuertes y significativas entre sus miembros.")
-    st.write("En el caso del Dow Jones se detectaron 5 comunidades cada una con un color distinto a modo de diferenciarlas. Usted puede visualizar en el gráfico las comunidades o a través del sidebar donde se visualizarán en formato de tablas.")
     st.plotly_chart(fig_community)
 
 #Mostrar tabla con nodos ordenados por tamaño
