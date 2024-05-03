@@ -9,6 +9,12 @@ import community
 
 random_seed = 42
 
+st.set_page_config(page_title="Análisis de Redes Sociales",
+                   page_icon=":chart_with_upwards_trend:",
+                   layout="wide",
+                   initial_sidebar_state="expanded"
+                  )
+
 def universities_graph(df):
     G = nx.Graph()
 
