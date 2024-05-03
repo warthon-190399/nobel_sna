@@ -407,3 +407,13 @@ if "Comunidades detectadas en la red" in detec:
         st.table(sorted_nodes)
     else:
         st.sidebar.info("Selecciona al menos una comunidad en el multiselect.")
+with st.expander("Acerca de:",
+                     expanded=False
+                     ):
+        st.write('''
+            - :orange[**Realizado por:**] [Tato Warthon](https://github.com/warthon-190399).
+            - :orange[**Fuente de datos:**] La información relacionadas a las universidades se realizó extrayendo los datos de [NobelPrize.org](https://www.nobelprize.org/prizes/lists/all-prizes-in-economic-sciences/). La extracción de artículos, papers y colaboradores se realizó utilizando métodos de extracción web de la página [RePEc: Research Papers in Economics](https://ideas.repec.org/).
+            - :orange[**Metodología:**] Se recopiló información detallada sobre premios Nobel y sus colaboradores académicos, así como las instituciones educativas asociadas. Se emplearon técnicas de análisis de redes para visualizar las complejas relaciones entre estos individuos y organizaciones. Se utilizaron indicadores como grados, medidas de centralidad y detección de comunidades para comprender la estructura y dinámicas de la red.
+                '''
+                 )
+
